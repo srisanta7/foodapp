@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background for a clean look */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #ffffff; /* White card for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px); /* Lift on hover for interactivity */
+}
+
+/* Profile Picture */
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff; /* Blue border to match button color */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Information */
+.profile-info {
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333; /* Dark text for the name */
+    margin: 10px 0;
+}
+
+.profile-email {
+    font-size: 16px;
+    color: #555; /* Slightly lighter text for email */
+}
+
+/* Profile Actions (Buttons) */
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 25px; /* Rounded buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.btn-logout {
+    background-color: #dc3545; /* Red for logout */
+}
+
+.btn-logout:hover {
+    background-color: #a71d2a; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 90%;
+    }
+}

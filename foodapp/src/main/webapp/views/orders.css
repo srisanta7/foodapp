@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Order Cards Container */
+.order-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Order Card */
+.order-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+/* Order Header */
+.order-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.order-header p {
+    color: #bbbbbb;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Order Items Section */
+.order-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.order-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item-quantity {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Order Summary Section */
+.order-summary {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.order-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.order-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* Highlight the total */
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .order-card {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
